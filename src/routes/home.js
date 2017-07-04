@@ -1,23 +1,33 @@
 const html = require('choo/html');
+const enhancer = require('../lib/choo_enhancer');
 const TopNavBar = require('../components/top_navbar');
 
 module.exports = (state, emit) => {
+  const leftLinks = [
+    { url: '/projects', text: 'Pitch a Project' },
+    { url: '/jobs', text: 'Work on a Project' },
+    { url: '/exchange', text: 'Trade BootCoin' }
+  ];
+
+  const rightLinks = [
+    { url: '/log-in', text: 'Log In' },
+    { url: '/sign-up', text: 'Sign Up', }
+  ];
+
+  const navigation = enhancer.withProps({
+    leftLinks,
+    rightLinks,
+  })(TopNavBar)(state, emit);
+
+  console.info(this.props);
+  console.warn('hello to HOME')
+
   return html`
     <body>
-      <header>${TopNavBar(state, emit)}</header>
+      <header>${navigation}</header>
       <div>
-        <input onkeypress=${impressKellie} />
-        <button onclick=${sayHello}>Say Hello</button>
       </div>
-      <footer><a href="/test">test</a></footer>
+      <footer></footer>
     </body>
   `
-
-  function impressKellie(e) {
-    console.info(e.target.value);
-  }
-
-  function sayHello() {
-    emit('navigation:update', { message: 'Hello Kellie' });
-  }
 }

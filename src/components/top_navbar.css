@@ -1,0 +1,22 @@
+:host {
+  display: flex;
+}
+
+:host > div {
+  flex: 1;
+}
+
+:host > .logo {
+  text-align: center;
+}
+
+:host > .right-links {
+  text-align: right;
+}
+
+:host > .right-links > a,
+:host > .left-links > a {
+  color: #353535;
+  text-decoration: none;
+  padding: 0 10px !important;
+}

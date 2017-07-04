@@ -9,10 +9,16 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "browserify": {
+    "transform": [
+      "sheetify/transform"
+    ]
+  },
   "dependencies": {
     "choo": "^5.6.2",
     "choo-expose": "^1.2.0",
     "choo-log": "^6.1.2",
+    "sheetify": "^6.1.0",
     "xtend": "^4.0.1"
   }
 }
