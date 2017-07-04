@@ -25,9 +25,9 @@ module.exports = function(state, emit) {
   return html`
     <body class=${styles}>
       <header>${navigation}</header>
-      <div>
+      <main>
         ${this.props.children(state, emit)}
-      </div>
+      </main>
       <footer>
         <div>
           <h3>About us</h3>

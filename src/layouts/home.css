@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+:host main {
+  padding: 0px 40px;
+}
+
 :host footer {
   color: #fff;
   background-color: #353535;
