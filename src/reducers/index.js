@@ -1,5 +1,5 @@
-const navigation = require('./navigation');
+// const navigation = require('./navigation');
 
 module.exports = (app) => {
-  app.use(navigation);
+  // app.use(navigation);
 }

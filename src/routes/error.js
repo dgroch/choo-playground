@@ -4,7 +4,9 @@ const HomeLayout = require('../layouts/home');;
 
 function content(state, emit) {
   return html`
-    <h1>Welcome to BootCoin</h1>
+    <div>
+      <p>Unknown route. Click <a href="/">here</a> to return home.</p>
+    </div>
   `
 }
 

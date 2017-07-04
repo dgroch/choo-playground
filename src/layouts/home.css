@@ -1,0 +1,15 @@
+:host {
+  background-color: #eee;
+  margin: 0;
+  padding: 0;
+}
+
+:host footer {
+  color: #fff;
+  background-color: #353535;
+  padding: 20px; 
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

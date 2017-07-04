@@ -1,6 +1,6 @@
 const html = require('choo/html');
+const PropTypes = require('../../lib/choo_proptypes');
 const css = require('sheetify');
-const PropTypes = require('../lib/choo_proptypes');
 const styles = css('./top_navbar.css');
 
 module.exports = function(state, emit) {
@@ -15,7 +15,7 @@ module.exports = function(state, emit) {
         ${this.props.leftLinks.map(link => html`<a href=${link.url}>${link.text}</a>`)}
       </div>
       <div class="logo">
-        <a href="/">My Project</a></div>
+        <a href="/">- LOGO -</a></div>
       <div class="right-links">
         ${this.props.rightLinks.map(link => html`<a href=${link.url}>${link.text}</a>`)}
       </div>

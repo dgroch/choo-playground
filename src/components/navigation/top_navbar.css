@@ -1,5 +1,7 @@
 :host {
   display: flex;
+  background-color: #fff;
+  padding: 25px 0;
 }
 
 :host > div {

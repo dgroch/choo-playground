@@ -1,6 +1,6 @@
 const html = require('choo/html');
 const enhancer = require('../lib/choo_enhancer');
 const HomeLayout = require('../layouts/home');;
-const SignUp = require('../components/authentication/sign_up');
+const LogIn = require('../components/authentication/log_in');
 
-module.exports = enhancer.withProps({ children: SignUp })(HomeLayout);
+module.exports = enhancer.withProps({ children: LogIn })(HomeLayout);
